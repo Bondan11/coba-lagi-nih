@@ -1,67 +1,53 @@
-<html>
-  <head>
-    <title>Contact Me</title>
-    <link rel="stylesheet" href="contact.css" />
-  </head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contact.css">
+    <title>Contact</title>
+</head>
+<body>
+    <div class="navbar">
+        <div class="navbar-left">
+            <img class="navbar-logo" src="icon/logo.PNG" alt="Logo">
+            <a class="navbar-link" href="index.html">Home</a>
+            <a class="navbar-link" href="Project1.html">Projects</a>
+        </div>
+        <div class="navbar-right">
+            <a class="navbar-link" href="">Contact Me</a>
+        </div>
+    </div>
 
-  <body>
-    <nav>
-      <div class="nav-left">
-        <ul>
-          <li>
-            <img src="image/logo.png" alt="dumbways_logo" />
-          </li>
-          <li>
-            <a href="index.html">Home</a>
-          </li>
-          <li>
-            <a href="#">Projek Saya</a>
-          </li>
-        </ul>
-      </div>
-      <div class="nav-right">
-        <a calss="active" href="contact.html">Contact Me</a>
-      </div>
-    </nav>
-
-    <h1>Ketik</h1>
     <form>
-      <div>
-        <label for="input-name">Nama</label>
-        <input id="input-name" height="100" type="text" required />
-      </div>
-
-      <div>
-        <label for="input-email">Email</label>
-        <input id="input-email" type="email" required />
-      </div>
-
-      <div>
-        <label for="input-phone">Nomor Hp</label>
-        <input id="input-phone" type="number" required />
-      </div>
-
-      <div>
-        <label for="input-subject">Subject</label>
-        <select id="input-subject">
-          <option value="" hidden></option>
-          <option>Mabar</option>
-          <option>Nobar</option>
-          <option>Ngopi</option>
-        </select>
-      </div>
-
-      <div>
-        <label for="input-message">Your Message</label>
-        <textarea id="input-message" rows="5" cols="10"></textarea>
-      </div>
-
-      <div class="container">
+        <div>
+            <label for="input-name">Nama</label>
+            <input id="input-name" type="text" required>
+        </div>
+        <div>
+            <label for="input-email">Email</label>
+            <input id="input-email" type="email" required>
+        </div>
+        <div>
+            <label for="input-phone">Nomer Hp</label>
+            <input id="input-phone" type="number">
+        </div>
+        <div>
+            <label for="input-subject">Subject</label>
+            <select id="input-subject" required>
+                <option value="" hidden>Select</option>
+                <option value="Option 1">Mabar</option>
+                <option value="Option 2">Nobar</option>
+                <option value="Option 3">Ngopi</option>
+            </select>
+        </div>
+        <div>
+            <label for="input-message">Apapun</label>
+            <textarea id="input-message" cols="10" rows="5"></textarea>
+        </div>
         <button type="button" onclick="submitData()">Submit</button>
-      </div>
     </form>
 
     <script src="contact.js"></script>
-
-  </body>
+</body>
 </html>
